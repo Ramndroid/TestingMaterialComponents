@@ -15,31 +15,17 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 
-// COMPONENTES
-import { MaterialTreeComponent } from './material-tree/material-tree.component';
-import { MaterialMenuComponent } from './material-menu/material-menu.component';
-import { MaterialTabsComponent } from './material-tabs/material-tabs.component';
-import { MaterialToolbarComponent } from './material-toolbar/material-toolbar.component';
-import { MaterialBasicButtonsComponent } from './material-basic-buttons/material-basic-buttons.component';
-
 // Para poder enrutar las tabs
 import { RouterModule } from '@angular/router';
-import { Tarea32Component } from './tarea32/tarea32.component';
+
 
 @NgModule({
-  declarations: [
-    MaterialTreeComponent,
-    MaterialMenuComponent,
-    MaterialTabsComponent,
-    MaterialToolbarComponent,
-    MaterialBasicButtonsComponent,
-    Tarea32Component
+  declarations: [    
   ],
   imports: [
     CommonModule,
-    BrowserAnimationsModule,
-
     RouterModule,
+    BrowserAnimationsModule,    
 
     // MATERIAL
     MatTreeModule,
@@ -51,14 +37,16 @@ import { Tarea32Component } from './tarea32/tarea32.component';
     MatTabsModule,
     MatToolbarModule,
     MatDividerModule
-  ],
-  exports: [
-    MaterialTreeComponent,
-    MaterialMenuComponent,
-    MaterialTabsComponent,
-    MaterialToolbarComponent,
-    MaterialBasicButtonsComponent,
-    Tarea32Component
+  ], exports: [
+    MatTreeModule,
+    MatCheckboxModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatDividerModule
   ]
 })
 export class MaterialModule { }
