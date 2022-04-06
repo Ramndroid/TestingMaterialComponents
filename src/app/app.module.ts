@@ -5,17 +5,32 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatTreeModule} from '@angular/material/tree';
+import { MaterialTreeComponent } from './components/material-tree/material-tree.component';
+
+// MATERIAL
+import { MatTreeModule } from '@angular/material/tree';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaterialTreeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTreeModule
+
+    // MATERIAL
+    MatTreeModule,
+    MatCheckboxModule,
+    MatIconModule,
+    MatFormFieldModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
