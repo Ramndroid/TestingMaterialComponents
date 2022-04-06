@@ -1,19 +1,20 @@
 .main-container {
-    background-color: whitesmoke;
-    height: 100%;
     padding-top: 50px;
 }
 
 .card-container {
-    width: 700px;
+    width: 80%;
     margin: 0 auto;
     border: 1px solid grey;
+
+    @media (min-width: 860px) {
+       width: 700px;
+    }
 }
 
 .tree-container {
     height: 370px;
     overflow: auto;
-    background-color: white;
     padding: 50px 50px 0px 50px;
 }
 
@@ -22,5 +23,4 @@
     justify-content: flex-end;
     gap: 20px;
     padding: 20px;
-    background-color: white;
 }
