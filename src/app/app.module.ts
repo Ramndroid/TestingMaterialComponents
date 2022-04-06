@@ -12,6 +12,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -29,7 +30,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatTreeModule,
     MatCheckboxModule,
     MatIconModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatButtonModule
     
   ],
   providers: [],
