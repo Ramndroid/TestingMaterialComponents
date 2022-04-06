@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-material-tabs',
+  templateUrl: './material-tabs.component.html',
+  styleUrls: ['./material-tabs.component.scss']
 })
-export class AppComponent implements OnInit {
+
+export class MaterialTabsComponent implements OnInit {
   navLinks: any[];
   activeLinkIndex = -1;
   constructor(private router: Router) {
@@ -20,8 +21,8 @@ export class AppComponent implements OnInit {
         link: '/samples',
         index: 1
       }, {
-        label: 'Third',
-        link: './samples',
+        label: 'Testing - Tree Component',
+        link: '/testing',
         index: 2
       },
     ];
