@@ -8,6 +8,7 @@ import { MaterialModule } from './components/material.module';
 import { HomeComponent } from './pages/home/home.component';
 import { SamplesComponent } from './pages/samples/samples.component';
 import { TestingComponent } from './pages/testing/testing.component';
+import { Babcn32Component } from './pages/babcn32/babcn32.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { TestingComponent } from './pages/testing/testing.component';
     AppComponent,
     HomeComponent,
     SamplesComponent,
-    TestingComponent
+    TestingComponent,
+    Babcn32Component
   ],
   imports: [
     BrowserModule,

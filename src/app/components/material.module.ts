@@ -24,6 +24,7 @@ import { MaterialBasicButtonsComponent } from './material-basic-buttons/material
 
 // Para poder enrutar las tabs
 import { RouterModule } from '@angular/router';
+import { Tarea32Component } from './tarea32/tarea32.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RouterModule } from '@angular/router';
     MaterialMenuComponent,
     MaterialTabsComponent,
     MaterialToolbarComponent,
-    MaterialBasicButtonsComponent
+    MaterialBasicButtonsComponent,
+    Tarea32Component
   ],
   imports: [
     CommonModule,
@@ -55,7 +57,8 @@ import { RouterModule } from '@angular/router';
     MaterialMenuComponent,
     MaterialTabsComponent,
     MaterialToolbarComponent,
-    MaterialBasicButtonsComponent
+    MaterialBasicButtonsComponent,
+    Tarea32Component
   ]
 })
 export class MaterialModule { }

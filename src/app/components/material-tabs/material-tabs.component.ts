@@ -11,20 +11,28 @@ export class MaterialTabsComponent implements OnInit {
   navLinks: any[];
   activeLinkIndex = -1;
   constructor(private router: Router) {
+
     this.navLinks = [
       {
         label: 'Home',
         link: '',
         index: 0
-      }, {
+      }, 
+      {
         label: 'Samples',
         link: '/samples',
         index: 1
-      }, {
-        label: 'Testing - Tree Component',
+      },
+      {
+        label: 'Tree Basic Component',
         link: '/testing',
         index: 2
       },
+      {
+        label: 'BABCN-32',
+        link: '/babcn32',
+        index: 2
+      }
     ];
   }
   ngOnInit(): void {
