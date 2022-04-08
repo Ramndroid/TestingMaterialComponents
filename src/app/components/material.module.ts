@@ -18,35 +18,29 @@ import { MatDividerModule } from '@angular/material/divider';
 // Para poder enrutar las tabs
 import { RouterModule } from '@angular/router';
 
+const material = [
+  // MATERIAL
+  MatTreeModule,
+  MatCheckboxModule,
+  MatIconModule,
+  MatFormFieldModule,
+  MatButtonModule,
+  MatMenuModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatDividerModule
+];
 
 @NgModule({
-  declarations: [    
+  declarations: [
   ],
   imports: [
     CommonModule,
     RouterModule,
-    BrowserAnimationsModule,    
-
-    // MATERIAL
-    MatTreeModule,
-    MatCheckboxModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatDividerModule
+    BrowserAnimationsModule,
+    [...material]
   ], exports: [
-    MatTreeModule,
-    MatCheckboxModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatDividerModule
+    [...material]
   ]
 })
 export class MaterialModule { }

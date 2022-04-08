@@ -27,11 +27,6 @@ export class MaterialTabsComponent implements OnInit {
         label: 'Tree Basic Component',
         link: '/testing',
         index: 2
-      },
-      {
-        label: 'BABCN-32',
-        link: '/babcn32',
-        index: 2
       }
     ];
   }

@@ -7,7 +7,6 @@ import { MaterialMenuComponent } from './material-menu/material-menu.component';
 import { MaterialTabsComponent } from './material-tabs/material-tabs.component';
 import { MaterialToolbarComponent } from './material-toolbar/material-toolbar.component';
 import { MaterialBasicButtonsComponent } from './material-basic-buttons/material-basic-buttons.component';
-import { Tarea32Component } from './tarea32/tarea32.component';
 import { MaterialModule } from './material.module';
 import { RouterModule } from '@angular/router';
 
@@ -18,7 +17,6 @@ import { RouterModule } from '@angular/router';
     MaterialTabsComponent,
     MaterialToolbarComponent,
     MaterialBasicButtonsComponent,
-    Tarea32Component    
   ],
   imports: [
     CommonModule,
@@ -31,7 +29,6 @@ import { RouterModule } from '@angular/router';
     MaterialTabsComponent,
     MaterialToolbarComponent,
     MaterialBasicButtonsComponent,
-    Tarea32Component,
     MaterialModule
   ]
 })
