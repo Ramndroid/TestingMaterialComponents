@@ -14,6 +14,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatInputModule } from '@angular/material/input';
 
 // Para poder enrutar las tabs
 import { RouterModule } from '@angular/router';
@@ -28,7 +29,8 @@ const material = [
   MatMenuModule,
   MatTabsModule,
   MatToolbarModule,
-  MatDividerModule
+  MatDividerModule,
+  MatInputModule
 ];
 
 @NgModule({
